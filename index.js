@@ -54,7 +54,9 @@ app.get("/send-payment-email", async (req, res) => {
     const emailInfo = await emailTransporter.sendMail(emailObj);
     console.log("Email Sent", emailInfo.messageId);
     res.send({ result: "Success" });
-  } catch (err) {
+
+  } catch (err) 
+  {
     console.log("Email Send Error", err);
     res.send({ result: "Email Failed" });
   }
