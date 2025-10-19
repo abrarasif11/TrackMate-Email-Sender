@@ -20,7 +20,7 @@ const emailTransporter = nodemailer.createTransport({
   },
 });
 
-// Email Route //
+// Email Route
 app.get("/send-payment-email", async (req, res) => {
   const paymentInfo = {
     transactionId: "6969696969",
